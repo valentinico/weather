@@ -1,6 +1,6 @@
 // const location = "San Miguel de Tucuman,ar";
 // const api_key = "c1a0e3338d7d4ad845ec6ebc1c1b9e65";
-// const url_base_weather = "http://api.openweathermap.org/data/2.5/weather";
+// const url_base_weather = "https://api.openweathermap.org/data/2.5/weather";
 // export const api_weather = `${url_base_weather}?q=${location}&appid=${api_key}&units=metric`;
 
 
