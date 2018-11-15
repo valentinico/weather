@@ -1,37 +1,10 @@
 import React from 'react';
-//import WeatherIcons from 'react-weathericons';
+
 import PropTypes from 'prop-types';
 
 
-// const icons = {
-//     [CLOUD]: "cloud",
-//     [SUN]: "day-sunny",
-//     [RAIN]: "rain",
-//     [SNOW]: "snow",
-//     [THUNDER]: "thunderstorm",
-//     [DRIZZLE]: "showers",
-// };
 
-// const getWeatherIcon = weatherState =>{
-//     const icon = icons[weatherState];
-//     console.log(weatherState);
-//     if (icon)
-//         return (
-//             <div>
-//                 <img src={CLOUD} alt=""/>
-//                 <WeatherIcons name={icon} ></WeatherIcons>
-//             </div>
-//             );
-//     else
-//         return <WeatherIcons name={"day-sunny"} ></WeatherIcons>;
-    
-// }
-
-
-const getWeatherIcon = weatherState =>{
-
-
-          
+const getWeatherIcon = weatherState =>{   
         return <img src={weatherState} alt=""/>
 }
 

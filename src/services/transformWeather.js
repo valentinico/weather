@@ -7,8 +7,8 @@ import {
     SUN, 
 } from './../constants/weathers';
 
-const getWeatherState = (icon) => {
-    const id = icon.weather[0].id;
+const getWeatherState = (weather_data) => {
+    const id = weather_data.weather[0].id;
     if ( id<300 ) {
         return THUNDER;
     }else if( id<400 ){
@@ -27,8 +27,10 @@ const getWeatherState = (icon) => {
     
 };
 
-const transformWeather = (weather_data) => {
 
+
+const transformWeather = (weather_data) => {
+ console.log(getWeatherState(weather_data));
     const data = {
         city : weather_data.name,
         temperature: weather_data.main.temp,
