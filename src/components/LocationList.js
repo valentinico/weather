@@ -1,14 +1,21 @@
 import React from 'react';
 import WeatherLocation from './WeatherLocation';
 
-const LocationList = () => (
+
+const eachCity = (cities) =>(
+    cities.map( city => <WeatherLocation key={city} city={city}/>)
+)
+
+
+
+const LocationList = ({cities}) => {
+
+    return(
         <div>
-            <WeatherLocation city="Nuuk, GL"></WeatherLocation>
-            <WeatherLocation city="Buenos Aires, AR"></WeatherLocation>
-            <WeatherLocation city="Mollendo, PE"></WeatherLocation>
-            <WeatherLocation city="San Miguel de Tucuman, AR"></WeatherLocation>
+            {eachCity(cities)}       
         </div>
     )
+    }
 
 
 export default LocationList;
