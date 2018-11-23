@@ -30,7 +30,6 @@ const getWeatherState = (weather_data) => {
 
 
 const transformWeather = (weather_data) => {
- console.log(getWeatherState(weather_data));
     const data = {
         city : weather_data.name,
         temperature: weather_data.main.temp,
