@@ -19,14 +19,15 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      city: 'Selecciones una ciudad'
+      city: null,
+      datadetail: null,
     }
     console.log(`this.state.city es: ${this.state.city}`);
+
   }
 
 
   handleSelectedLocation = city => {
-    console.log(`handleSelectedLocation es: ${city}`);
     this.setState({
       city : city
     })
@@ -37,7 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <LocationList cities={cities} onSelectedLocation={this.handleSelectedLocation}></LocationList>
-        <ForecastExtended city={this.state.city}></ForecastExtended>
+        <ForecastExtended city={this.state.city} datadetail={this.state.datadetail}></ForecastExtended>
       </div>
     );
 
